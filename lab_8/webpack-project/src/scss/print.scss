@@ -1,0 +1,56 @@
+@media print {
+  .footer,
+  nav#navbar {
+    display: none;
+  }
+  img {
+    max-width: 300px;
+  }
+  figure.caption-border,
+  body > p.blocktext {
+    border: 5px solid transparent;
+  }
+  body > h2#hobby {
+    page-break-before: always;
+  }
+  figure.sign {
+    border: 5px solid transparent;
+  }
+
+  .flex-position {
+    justify-content: center;
+    flex-wrap: nowrap;
+    figure {
+      margin-top: 132px !important;
+    }
+  }
+
+  body {
+    font: 12pt Georgia, Times New Roman, Palatino !important;
+    line-height: 1.3;
+  }
+  a {
+    &[href^="http"]:after {
+      content: "::Ссылка: <" attr(href) ">";
+      color: #000;
+    }
+  }
+  #new {
+    margin: 300px;
+  }
+
+  th {
+    color: #000 !important;
+  }
+  td {
+    color: #000 !important;
+  }
+
+  .flex {
+    margin-top: 100px;
+  }
+
+  #footer {
+    color: #000;
+  }
+}

@@ -1,0 +1,18 @@
+extends ./layout/main
+include ./utils/mixin
+
+block variables 
+  - var title ="photo";
+
+block content 
+  h2 Фотоальбом
+  .flex-position
+    +photoblock('https://clck.ru/TPwZ7', './images/1.jfif', 'Картинка №1 (257 x 196)')
+    +photoblock('https://clck.ru/TPwZf', './images/2.jfif', 'Картинка №2 (284 x 177)')
+    +photoblock('https://clck.ru/TPwb3', './images/3.jfif', 'Картинка №3 (251 x 201)')
+    +photoblock('https://clck.ru/TPwbZ', './images/4.jfif', 'Картинка №4 (231 x 216)')
+    +photoblock('https://clck.ru/TPwcC', './images/5.jfif', 'Картинка №5 (300 x 168)')
+    +photoblock('https://clck.ru/TPwcx', './images/6.jfif', 'Картинка №6 (284 x 177)')
+    +photoblock('https://clck.ru/TPwdM', './images/7.jfif', 'Картинка №7 (300 x 168)')
+    +photoblock('https://clck.ru/TPwdh', './images/8.jfif', 'Картинка №8 (300 x 168)')
+  include ./includes/footer

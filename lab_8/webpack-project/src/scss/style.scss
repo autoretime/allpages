@@ -1,0 +1,154 @@
+@import "./reset";
+@import "./menu";
+@import "./print.scss";
+@import "./media.scss";
+
+body {
+  font-family: cursive;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    200deg,
+    #ffa473,
+    #ff8240,
+    #a63a00,
+    #bf6230,
+    #ff5900
+  );
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+div.footer {
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+/* probuy */
+
+section {
+  background: #333333;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* index */
+
+.caption-border {
+  width: 400px;
+  margin: 50px auto 0;
+  border: 5px solid #e5bf23;
+  background: white;
+  padding: 10px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  figcaption {
+    padding: 10px;
+    color: #000;
+    background: #e5bf23;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+p.blocktext {
+  width: 400px;
+  /* Ширина слоя */
+  /* Выравнивание по центру */
+  margin: 0 auto 50px;
+  border: 5px solid #e5bf23;
+  background: white;
+  padding: 10px;
+}
+
+/* raspisanie */
+
+table {
+  border: #ccc solid 1px;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+table caption {
+  font-size: 1.3em;
+  margin: 0.5em 0 0.75em;
+}
+table tr {
+  background: #333333;
+  border: #ddd solid 1px;
+  padding: 0.35em;
+  color: #fff;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+  font-size: 18px;
+  border: #ddd solid 1px;
+}
+table th {
+  font-size: 20px;
+}
+/* photo ** news */
+.flex-position {
+  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sign {
+  width: 400px;
+  margin: 50px auto 0;
+  border: 5px solid #e5bf23;
+  background: white;
+  padding: 10px;
+
+  img {
+    margin: 0 auto 10px;
+    width: 300;
+    height: 250;
+    display: block;
+  }
+
+  figcaption {
+    padding: 10px;
+    color: #000;
+    background: #e5bf23;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+#center {
+  text-align: center;
+  color: #ff0000;
+  display: block;
+  font-size: 20px;
+}

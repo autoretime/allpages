@@ -1,0 +1,77 @@
+extends ./layout/main
+
+block variables 
+  - var title ="rozklad";
+
+block content 
+  h2 Мое расписание
+    .flex
+      table
+        thead   
+          tr
+            th(scope='col') Время
+            th(scope='col') Понедельник
+            th(scope='col') Вторник
+            th(scope='col') Среда
+            th(scope='col') Четверг
+            th(scope='col') Пятница
+        tbody
+          tr
+            td(scope="row" aria-label="Время") 11:25
+            td(aria-label="Понедельник")  -- 
+            td(aria-label="Вторник")  -- 
+            td(aria-label="Среда")  -- 
+            td(aria-label="Четверг")
+              | Чисельні методи в інформатиці 
+              br
+              | "Левчук С.А." 41(1)
+            td(aria-label="Пятница")  -- 
+          tr
+            td(scope="row" aria-label="Время") 12:55
+            td(aria-label="Понедельник")
+              | Основи програмної інженерії
+              br
+              |  (лекція) "Чопоров С.В." 50(1)
+            td(aria-label="Вторник")  -- 
+            td(aria-label="Среда")
+              | Основи програмної інженерії 
+              br
+              | "Манько Н.І." 40(1)
+            td(aria-label="Четверг")
+              | Практикум з програмування 
+              br
+              | "Ткаченко І.Г." 41(1)
+            td(aria-label="Пятница")
+              | Основи автоматичного проектування
+              br
+              |  (лекція) "Кудін О.В." 50(1)
+          tr
+            td(scope="row" aria-label="Время") 14:30
+            td(aria-label="Понедельник")
+              | Чисельні методи в інформатиці
+              br
+              | (лекція)"Левчук С.А."
+            td(aria-label="Вторник") Іноземна мова "Вертегел В.Л."54  (1) 
+            td(aria-label="Среда")
+              | Основи автоматичного проектування
+              br
+              | "Кривохата А.Г." 40(1)
+            td(aria-label="Четверг")
+              | Практикум з програмування 
+              br
+              | "Ткаченко І.Г."
+            td(aria-label="Пятница")
+              | Front-end технології 
+              br
+              | (лекція) "Лісняк А.О." 62(1)
+          tr
+            td(scope="row" aria-label="Время") 16:05
+            td(aria-label="Понедельник")  -- 
+            td(aria-label="Вторник")
+              | Front-end технології 
+              br
+              | "Кальниченко Д.О." 40(1)
+            td(aria-label="Среда")  -- 
+            td(aria-label="Четверг")  -- 
+            td(aria-label="Пятница")  -- 
+  include ./includes/footer

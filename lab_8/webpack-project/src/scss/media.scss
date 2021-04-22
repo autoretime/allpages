@@ -1,0 +1,131 @@
+@import "./var.scss";
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: $small) and (max-width: $small) {
+  // menu
+  body {
+    width: 100vw;
+  }
+
+  body > nav#navbar {
+    height: 132px;
+    width: 220px;
+  }
+
+  body > nav#navbar > ul {
+    width: 220px;
+  }
+
+  body > nav#navbar > ul > li {
+    width: 220px;
+  }
+
+  body > nav#navbar > ul > li > a {
+    width: 200px;
+  }
+
+  #navbar li,
+  #navbar a {
+    display: block;
+    text-align: center;
+  }
+
+  //table
+
+  table {
+    border: 0;
+  }
+ 
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: $small) and (max-width: $medium) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: $medium) and (max-width: $large) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: $extraLarge) {
+  // Gotovo
+}

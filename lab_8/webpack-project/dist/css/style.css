@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 25px;
+}
+fieldset,
+img {
+  border: 0;
+  display: block;
+}
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+*:before,
+*:after {
+  content: "";
+  padding: 0;
+  margin: 0;
+}
+abbr,
+acronym {
+  border: 0;
+}
+#navbar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #1e1e1e;
+  border-radius: 20px 5px;
+  width: 550px;
+  text-align: center;
+  background-color: #333;
+}
+#navbar li {
+  display: inline;
+}
+#navbar a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+#navbar a:hover {
+  border-radius: 20px 5px;
+  background-color: #ffa473;
+}
+@media print {
+  .footer,
+  nav#navbar {
+    display: none;
+  }
+  img {
+    max-width: 300px;
+  }
+  figure.caption-border,
+  body > p.blocktext {
+    border: 5px solid transparent;
+  }
+  body > h2#hobby {
+    page-break-before: always;
+  }
+  figure.sign {
+    border: 5px solid transparent;
+  }
+  .flex-position {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .flex-position figure {
+    margin-top: 132px !important;
+  }
+  body {
+    font: 12pt Georgia, Times New Roman, Palatino !important;
+    line-height: 1.3;
+  }
+  a[href^=http]:after {
+    content: "::Ссылка: <" attr(href) ">";
+    color: #000;
+  }
+  #new {
+    margin: 300px;
+  }
+  th {
+    color: #000 !important;
+  }
+  td {
+    color: #000 !important;
+  }
+  .flex {
+    margin-top: 100px;
+  }
+  #footer {
+    color: #000;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
+  body > nav#navbar {
+    height: 132px;
+    width: 220px;
+  }
+  body > nav#navbar > ul {
+    width: 220px;
+  }
+  body > nav#navbar > ul > li {
+    width: 220px;
+  }
+  body > nav#navbar > ul > li > a {
+    width: 200px;
+  }
+  #navbar li,
+  #navbar a {
+    display: block;
+    text-align: center;
+  }
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+body {
+  font-family: cursive;
+  min-height: 100vh;
+  background-image: linear-gradient(200deg, #ffa473, #ff8240, #a63a00, #bf6230, #ff5900);
+}
+h1,
+h2,
+p {
+  text-align: center;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+div.footer {
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+/* probuy */
+section {
+  background: #333;
+  color: #fff;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+/* index */
+.caption-border {
+  width: 400px;
+  margin: 50px auto 0;
+  border: 5px solid #e5bf23;
+  background: #fff;
+  padding: 10px;
+}
+.caption-border img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.caption-border figcaption {
+  padding: 10px;
+  color: #000;
+  background: #e5bf23;
+  text-align: center;
+  text-transform: uppercase;
+}
+p.blocktext {
+  width: 400px;
+/* Ширина слоя */
+/* Выравнивание по центру */
+  margin: 0 auto 50px;
+  border: 5px solid #e5bf23;
+  background: #fff;
+  padding: 10px;
+}
+/* raspisanie */
+table {
+  border: #ccc solid 1px;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+table caption {
+  font-size: 1.3em;
+  margin: 0.5em 0 0.75em;
+}
+table tr {
+  background: #333;
+  border: #ddd solid 1px;
+  padding: 0.35em;
+  color: #fff;
+}
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+  font-size: 18px;
+  border: #ddd solid 1px;
+}
+table th {
+  font-size: 20px;
+}
+/* photo ** news */
+.flex-position {
+  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sign {
+  width: 400px;
+  margin: 50px auto 0;
+  border: 5px solid #e5bf23;
+  background: #fff;
+  padding: 10px;
+}
+.sign img {
+  margin: 0 auto 10px;
+  width: 300;
+  height: 250;
+  display: block;
+}
+.sign figcaption {
+  padding: 10px;
+  color: #000;
+  background: #e5bf23;
+  text-align: center;
+  text-transform: uppercase;
+}
+#center {
+  text-align: center;
+  color: #f00;
+  display: block;
+  font-size: 20px;
+}
+
