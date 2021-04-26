@@ -1,0 +1,42 @@
+/* CSS reset */
+* { 
+    margin:0;
+    padding:0;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+    display: block;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+th,var {
+    font-style:normal;
+    font-weight:normal;
+    
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+*:before,*:after {
+    content:'';
+    padding: 0;
+    margin: 0;
+}
+abbr,acronym { border:0;
+}
